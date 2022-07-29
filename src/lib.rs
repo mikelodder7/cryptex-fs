@@ -180,9 +180,9 @@ impl<'a> KeyRingFileOpenOptions<'a> {
     /// The default memory cost in KB
     pub const DEFAULT_M_COST: u32 = 32768;
     /// The default number of iterations
-    pub const DEFAULT_T_COST: u32 = 96;
+    pub const DEFAULT_T_COST: u32 = 48;
     /// The default parallelization
-    pub const DEFAULT_P_COST: u32 = 3;
+    pub const DEFAULT_P_COST: u32 = 2;
     /// The default output length
     pub const DEFAULT_OUT_LEN: usize = 64;
 

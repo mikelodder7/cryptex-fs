@@ -1,4 +1,7 @@
-use chacha20poly1305::{aead::{AeadInPlace, NewAead}, Key, XChaCha20Poly1305, XNonce};
+use chacha20poly1305::{
+    aead::{AeadInPlace, NewAead},
+    Key, XChaCha20Poly1305, XNonce,
+};
 use rand_core::RngCore;
 use zeroize::Zeroize;
 
@@ -72,7 +75,7 @@ impl Protected {
                 self.pre_key.zeroize();
                 self.nonce.zeroize();
                 aad.zeroize();
-                Some(Unprotected{ protected: self})
+                Some(Unprotected { protected: self })
             }
         }
     }
